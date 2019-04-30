@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en" >
+    <html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Final Project - 2nd page</title>
+  <script type="text/javascript" src="/js/newindex.js"></script>
+    
+    <body> 
+        <h1>New Demo</h1>
+        <fieldset class="standardSelection col-xs-12">
+        <label for="tpEmail">Email address of the authorized user</label>
+                    
+                    <div class="col-xs-12 col-sm-4">
+                      <input type="text" name="AUTHORIZED_USER_EMAIL" id="tpEmail" size="30" maxlength="50" class="form-control" value="">
+                    </div>
+                  <br/>
+<div class="row">
+                    
+                      <div class="row">
+                        <div class="col-xs-12 col-sm-8">
+                          Would you like to allow this person to view your billing statement, payment history, and account activity&#x3f;
+                        </div>
+                        <div class="col-xs-12 col-sm-4">
+                          <div class="col-xs-12 col-sm-4">
+                            <label class="checkbox-inline" for="viewStmtsY">
+                                    <input type="checkbox" name="TP_VIEW_STATEMENTS" id="viewStmtsY" value="Y">
+                                    Check for Yes
+                                  </label>
+                          </div>
+                        </div>
+                      </div>
+                    </fieldset>
+                  </div>
+        <br>
+        <img src="img/epayNew.jpg" alt="New ePay">
+        <p>Here is a sample snapshot of what the new features would look like on the actual website.</p>
+<h2>What was added or taken away?</h2>
+        <p>My main goal was for the user to have less clicks while navigating through adding an authorized user. By combining all three of these into one, it will reduce on the space taken up on the page and allow the user not to click twice. (This information seemed feaseable to put in one line, rather than seperating into two).</p>
+        <h2>JSON Format</h2>
+        <p>Here is a sample of the JSON code written for this change</p>
+        <p>var checkboxDataMarker = "data-input-checkbox-n";
+            function TbpDataTableInputs(b, a) {
+           (function() {
+           $(":checkbox", $(b).find("tbody")).each(function(a, b) {
+           $(b).attr(checkboxDataMarker, a);
+           });
+           })();</p>
+        <h3>Go back to original page click <a href="index.html" target="_blank">here</a></h3>
+                  
